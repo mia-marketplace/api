@@ -1,24 +1,19 @@
-# README
+# MIA Marketplace application backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application dependencies:
 
-Things you may want to cover:
+* Ruby 2.3.3
 
-* Ruby version
+* Rails 5.2.2
 
-* System dependencies
+* PostgreSQL 10.5
 
-* Configuration
+### Getting started:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Clone the repo](https://github.com/mia-marketplace/api.git)
+- Run `bundler install` to install gem dependencies
+- Create Postgres databases (this can be done using `CREATE DATABASE` command in psql shell) namely:
+..* `miam-api-dev`
+..* `miam-api-prod`
+..* `miam-api-test`
+- Run `rails s` to start the server
